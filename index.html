@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Gem 💎</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Background canvases for effects -->
+    <canvas id="confetti-canvas" class="fx-layer" aria-hidden="true"></canvas>
+    <canvas id="fireworks-canvas" class="fx-layer" aria-hidden="true"></canvas>
+
+    <!-- Music controls -->
+    <audio id="bg-music" preload="auto" loop></audio>
+    <button id="music-toggle" class="music-toggle" aria-label="Toggle music">♪</button>
+
+    <!-- Section 1: Greeting -->
+    <section id="section-greeting" class="section visible">
+        <div class="content greeting">
+            <h1 class="shine-title">Happy Birthday Gem 💎</h1>
+            <p class="subtitle">Wishing you a day as sparkling as you are ✨</p>
+            <div class="floating-hearts" aria-hidden="true"></div>
+            <button id="tap-to-see" class="primary-btn">Tap to See 💖</button>
+        </div>
+    </section>
+
+    <!-- Section 2: DOB Input -->
+    <section id="section-dob" class="section hidden">
+        <div class="content dob">
+            <h2>Enter your Date of Birth 💖</h2>
+            <div class="dob-form">
+                <input id="dob-input" type="date" aria-label="Date of Birth" />
+                <button id="dob-submit" class="primary-btn">Continue</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Gift Page -->
+    <section id="section-gift" class="section hidden">
+        <div class="content gift">
+            <h2>Your Special Gift 🎁</h2>
+            <div class="gift-area">
+                <button id="gift-box" class="gift-box" aria-label="Open the gift">
+                    <div class="lid"></div>
+                    <div class="box"></div>
+                    <div class="ribbon"></div>
+                </button>
+                <p class="tap-hint">Tap the Gift 🎁</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Final Message -->
+    <section id="section-message" class="section hidden">
+        <div class="content message">
+            <h2 class="message-title">For My Love 💖</h2>
+            <div id="message-container" class="message-container"></div>
+            <div class="sparkles" aria-hidden="true"></div>
+            <button id="replay" class="secondary-btn" hidden>Replay Magic ✨</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<!--
+Notes:
+- Click the gift to open and proceed to DOB input.
+- Music will start after your first click (browser policy).
+- Fireworks will celebrate at the end of the message.
+-->
+</html>
+
+
