@@ -19,7 +19,7 @@
 
   // Provide a royalty-free ambient track via data URI fallback if network blocked
   // Music setup - use your exact file path
-  const preferredSrc = 'file:///C:/Users/Dell/Downloads/I Wanna Be Yours Song Download Ringtone - MobCup.Com.Co.mp3';
+  const preferredSrc = 'music.mp3';
   const fallbackSrc = 'https://cdn.pixabay.com/download/audio/2022/08/10/audio_2f0d3b9f36.mp3?filename=romantic-ambient-116199.mp3';
   
   // Set source immediately and add error handling
@@ -277,5 +277,6 @@
   updateConfetti();
   updateFireworks();
 })();
+
 
 
